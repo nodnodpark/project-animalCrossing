@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>찾아봐요 당신의 동물의 숲</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+</head>
+
+<style>
+    body {
+        width: 1320px;
+        height: 1239px;
+        margin: auto;
+        background-image: url('images/bg2.jpg');
+        background-repeat: repeat;
+        background-color: #f5f3bd;
+    }
+
+    * {
+        font-family: 'NanumSquare', sans-serif !important;
+    }
+
+    .wrap {
+        width: 1320px;
+        /* background-color: cyan; */
+        margin: 60px auto;
+        text-align: center;
+    }
+
+    .topLogo {
+        width: 306px;
+        height: 174px;
+        margin-bottom: 50px;
+    }
+
+    .contents01 {
+        width: 1080px;
+        height: auto;
+        background-color: #fff;
+        margin: auto;
+    }
+
+    .Qnumber {
+        width: 180px;
+        height: 100px;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 96px;
+        color: #fff;
+        background-image: url('images/Qnumber.png');
+        background-repeat: no-repeat;
+        margin: auto;
+    }
+
+    .question {
+        font-size: 40px;
+        font-weight: 700;
+        color: #11a083;
+        width: 1080px;
+        text-align: center;
+        /* background-color: red; */
+        margin: 50px 0 0 0;
+    }
+
+    .subtxt {
+        width: 1080px;
+        text-align: center;
+        font-size: 20px;
+        color: #666;
+        margin: 0 0 50px;
+    }
+
+    .selectBox {
+        width: 900px;
+        background-color: aqua;
+        margin: auto;
+    }
+
+    .crouselBtn {
+        margin: auto;
+        width: 900px;
+        background-color: brown;
+    }
+
+    .btn {
+        width: 433px;
+        height: 80px;
+        margin-top: 20px;
+        border-radius: 50px;
+        background: #11a083;
+        border: none;
+        font-size: 40px;
+        font-weight: 700;
+        margin: 50px 0 80px 0;
+    }
+
+    .carousel-indicators {
+        margin-top: 50px;
+    }
+
+
+    .carousel-item {
+        width: 900px;
+        /* background-color: red; */
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    .d-block button {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        background-color: #eaeaea;
+        border: none;
+        border-radius: 500px;
+        text-align: center;
+        line-height: 200px;
+    }
+</style>
+
+<body>
+    <div class="wrap">
+        <img src="images/smalltitle.png" alt="" class="topLogo">
+        <div class="contents01">
+            <p class="Qnumber">Q2</p>
+            <p class="question">정현님이 좋아하는 동물은 무엇인가요?</p>
+            <p class="subtxt">당신이 좋아하는 동물의 종류를 최대 3가지 골라주세요!</p>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100" alt="slide01">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>4</button>
+                            <button>5</button>
+                            <button>6</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" alt="slide02">
+                            <button>7</button>
+                            <button>8</button>
+                            <button>9</button>
+                            <button>10</button>
+                            <button>11</button>
+                            <button>12</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" alt="slide03">
+                            <button>13</button>
+                            <button>14</button>
+                            <button>15</button>
+                            <button>16</button>
+                            <button>17</button>
+                            <button>18</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" alt="slide04">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>4</button>
+                            <button>5</button>
+                            <button>6</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="crouselBtn">
+                    <div class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <img src="images/prev.png" alt="">
+                    </div>
+                    <div class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <img src="images/next.png" alt="">
+                    </div>
+                </div>
+                <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a> -->
+            </div>
+            <button class="btn btn-primary">다음단계로</button>
+        </div>
+    </div>
+</body>
+
+</html>
